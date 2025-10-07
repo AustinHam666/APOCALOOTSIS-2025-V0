@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: a2ed89859e924c3438742c5a18863bd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7266547696892419783
+    second: Muebles_0
+  - first:
+      213: -6210393380899954601
+    second: Muebles_1
+  - first:
+      213: 8188251374309283357
+    second: Muebles_2
+  - first:
+      213: -6988619976121303139
+    second: Muebles_3
+  - first:
+      213: 718196796353388744
+    second: Muebles_4
+  - first:
+      213: -4147420997437990517
+    second: Muebles_5
+  - first:
+      213: 7449446241402049599
+    second: Muebles_6
+  - first:
+      213: 4524216079488185363
+    second: Muebles_7
+  - first:
+      213: 2938296990166774899
+    second: Muebles_8
+  - first:
+      213: -4137072222706081205
+    second: Muebles_9
+  - first:
+      213: -4594557727860055761
+    second: Muebles_10
+  - first:
+      213: 1892736449397651327
+    second: Muebles_11
+  - first:
+      213: -2767517916143498158
+    second: Muebles_12
+  - first:
+      213: -6910361656988049990
+    second: Muebles_13
+  - first:
+      213: 7584798460783011125
+    second: Muebles_14
+  - first:
+      213: 4292160047856022672
+    second: Muebles_15
+  - first:
+      213: -8722075474898930789
+    second: Muebles_16
+  - first:
+      213: 7594538469067337704
+    second: Muebles_17
+  - first:
+      213: -2008190924267318364
+    second: Muebles_18
+  - first:
+      213: -2748445646999013780
+    second: Muebles_19
+  - first:
+      213: -1717508395037610540
+    second: Muebles_20
+  - first:
+      213: 8516950956736876223
+    second: Muebles_21
+  - first:
+      213: -6195805148105220848
+    second: Muebles_22
+  - first:
+      213: 5452445630731565296
+    second: Muebles_23
+  - first:
+      213: 5113246554200200220
+    second: Muebles_24
+  - first:
+      213: 3399967418921266748
+    second: Muebles_25
+  - first:
+      213: 8205259779521395582
+    second: Muebles_26
+  - first:
+      213: -670931392137380603
+    second: Muebles_27
+  - first:
+      213: -1347312322361098887
+    second: Muebles_28
+  - first:
+      213: 319644714268741425
+    second: Muebles_29
+  - first:
+      213: -73860313008017102
+    second: Muebles_30
+  - first:
+      213: 2787546896422291737
+    second: Muebles_31
+  - first:
+      213: -2715847413619615279
+    second: Muebles_32
+  - first:
+      213: 77653493263456096
+    second: Muebles_33
+  - first:
+      213: 5239501839839884142
+    second: Muebles_34
+  - first:
+      213: -1671152579253907912
+    second: Muebles_35
+  - first:
+      213: 574513144222698727
+    second: Muebles_36
+  - first:
+      213: 7598615407850915271
+    second: Muebles_37
+  - first:
+      213: 3077624571998141708
+    second: Muebles_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Muebles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9316b479e59082b90800000000000000
+      internalID: -7266547696892419783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 38
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7506508cf1040d9a0800000000000000
+      internalID: -6210393380899954601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 38
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d161f41ed3382a170800000000000000
+      internalID: 8188251374309283357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f3715b82f630f90800000000000000
+      internalID: -6988619976121303139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 34
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0a77d5e2c87f900800000000000000
+      internalID: 718196796353388744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 31
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8956b9a3966176c0800000000000000
+      internalID: -4147420997437990517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 32
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34532043efb16760800000000000000
+      internalID: 7449446241402049599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 314f001dd8e39ce30800000000000000
+      internalID: 4524216079488185363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 37
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3747d777b8de6c820800000000000000
+      internalID: 2938296990166774899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 36
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42e77b8bba2696c0800000000000000
+      internalID: -4137072222706081205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 35
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2120eae61adc30c0800000000000000
+      internalID: -4594557727860055761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_11
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 33
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77f7c7c5c9544a10800000000000000
+      internalID: 1892736449397651327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 36
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cccb24e1dc799d0800000000000000
+      internalID: -2767517916143498158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_13
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 40
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd5fb58fa67910a0800000000000000
+      internalID: -6910361656988049990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_14
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 32
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535a6eb930e924960800000000000000
+      internalID: 7584798460783011125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_15
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 31
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094f49b92d0d09b30800000000000000
+      internalID: 4292160047856022672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 34
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93b08e2196f4f680800000000000000
+      internalID: -8722075474898930789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 36
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef2cc10088356960800000000000000
+      internalID: 7594538469067337704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_18
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 32
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a312e58ef87124e0800000000000000
+      internalID: -2008190924267318364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_19
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 32
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66b726fe3f8bd9d0800000000000000
+      internalID: -2748445646999013780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd2807e63f2a28e0800000000000000
+      internalID: -1717508395037610540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe89b935c9423670800000000000000
+      internalID: 8516950956736876223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_22
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01dd6a96b04140aa0800000000000000
+      internalID: -6195805148105220848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_23
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8b2e0b96afaab40800000000000000
+      internalID: 5452445630731565296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14d71066a6e5f640800000000000000
+      internalID: 5113246554200200220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_25
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e24bc8a5c1f2f20800000000000000
+      internalID: 3399967418921266748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_26
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b3c20db40fed170800000000000000
+      internalID: 8205259779521395582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_27
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 3
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d3efe147f50b6f0800000000000000
+      internalID: -670931392137380603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_28
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97df828c4926d4de0800000000000000
+      internalID: -1347312322361098887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_29
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13fc1509c2b9f6400800000000000000
+      internalID: 319644714268741425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_30
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2317828cf6899fef0800000000000000
+      internalID: -73860313008017102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9194efb122b5fa620800000000000000
+      internalID: 2787546896422291737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_32
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d91a0f9a2f5f4ad0800000000000000
+      internalID: -2715847413619615279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_33
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 5
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0675981d071e31100800000000000000
+      internalID: 77653493263456096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_34
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6379abc92376b840800000000000000
+      internalID: 5239501839839884142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_35
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 4
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ec714559fdec8e0800000000000000
+      internalID: -1671152579253907912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_36
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 4
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eccf2829a419f700800000000000000
+      internalID: 574513144222698727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_37
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c583c94474b37960800000000000000
+      internalID: 7598615407850915271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muebles_38
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d76f50e3be5ba20800000000000000
+      internalID: 3077624571998141708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Muebles_0: -7266547696892419783
+      Muebles_1: -6210393380899954601
+      Muebles_10: -4594557727860055761
+      Muebles_11: 1892736449397651327
+      Muebles_12: -2767517916143498158
+      Muebles_13: -6910361656988049990
+      Muebles_14: 7584798460783011125
+      Muebles_15: 4292160047856022672
+      Muebles_16: -8722075474898930789
+      Muebles_17: 7594538469067337704
+      Muebles_18: -2008190924267318364
+      Muebles_19: -2748445646999013780
+      Muebles_2: 8188251374309283357
+      Muebles_20: -1717508395037610540
+      Muebles_21: 8516950956736876223
+      Muebles_22: -6195805148105220848
+      Muebles_23: 5452445630731565296
+      Muebles_24: 5113246554200200220
+      Muebles_25: 3399967418921266748
+      Muebles_26: 8205259779521395582
+      Muebles_27: -670931392137380603
+      Muebles_28: -1347312322361098887
+      Muebles_29: 319644714268741425
+      Muebles_3: -6988619976121303139
+      Muebles_30: -73860313008017102
+      Muebles_31: 2787546896422291737
+      Muebles_32: -2715847413619615279
+      Muebles_33: 77653493263456096
+      Muebles_34: 5239501839839884142
+      Muebles_35: -1671152579253907912
+      Muebles_36: 574513144222698727
+      Muebles_37: 7598615407850915271
+      Muebles_38: 3077624571998141708
+      Muebles_4: 718196796353388744
+      Muebles_5: -4147420997437990517
+      Muebles_6: 7449446241402049599
+      Muebles_7: 4524216079488185363
+      Muebles_8: 2938296990166774899
+      Muebles_9: -4137072222706081205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

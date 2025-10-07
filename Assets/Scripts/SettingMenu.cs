@@ -7,6 +7,7 @@ public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audioMixer; // Lo configuramos en el inspector
     public Slider volumeSlider;
+    public Button backToMenuButton; // Asigna el botón desde el inspector
 
     void Start()
     {
@@ -16,6 +17,16 @@ public class SettingsMenu : MonoBehaviour
             float savedVolume = PlayerPrefs.GetFloat("volume");
             volumeSlider.value = savedVolume;
             audioMixer.SetFloat("volume", savedVolume);
+        }
+
+        // Ocultar el botón si estamos en el MainMenu
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            backToMenuButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            backToMenuButton.gameObject.SetActive(true);
         }
     }
 
@@ -27,6 +38,8 @@ public class SettingsMenu : MonoBehaviour
 
     public void BackToMenu()
     {
+        PlayerPrefs.SetInt("hasStarted", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene("MainMenu");
     }
 }
