@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Ajustes")]
-    public float moveSpeed = 5f;
+    // moveSpeed ha sido movido a PlayerMovement; este script leerá la velocidad actual desde allí.
 
     [Header("Controles (Inspector)")]
     public KeyCode upKey;
@@ -14,12 +14,15 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
+    private PlayerMovement playerMovement;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
             Debug.LogError("PlayerController necesita un Rigidbody2D en " + gameObject.name);
+        // intentar obtener PlayerMovement para leer la velocidad actual
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     void Update()
@@ -47,7 +50,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Movimiento físico consistente
-        Vector2 newPos = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
+        float speedToUse = (playerMovement != null) ? playerMovement.CurrentSpeed : 5f; // fallback 5
+        Vector2 newPos = rb.position + movement * speedToUse * Time.fixedDeltaTime;
         rb.MovePosition(newPos);
     }
 }
