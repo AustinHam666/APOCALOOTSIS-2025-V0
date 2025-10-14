@@ -717,6 +717,8 @@ GameObject:
   - component: {fileID: 318828157}
   - component: {fileID: 318828161}
   - component: {fileID: 318828160}
+  - component: {fileID: 318828162}
+  - component: {fileID: 318828163}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -736,7 +738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4805e46ac6402c54f84604d218b06476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
   upKey: 273
   downKey: 274
   leftKey: 276
@@ -809,8 +810,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.814, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -887,6 +888,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &318828162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318828156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0249dcbf202b2d5438d8ddf5d314c8a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  detectDistance: 1
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  interactKey: 0
+  playerId: 2
+  autoAssignKey: 1
+--- !u!114 &318828163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318828156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69fb36138894874aaa43d565b7d3f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 2
+  sprintSpeed: 5
+  playerId: 2
+  sprintKey: 111
 --- !u!1 &476268555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,8 +1549,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0.05601, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1935,6 +1971,7 @@ GameObject:
   - component: {fileID: 1393424397}
   - component: {fileID: 1393424401}
   - component: {fileID: 1393424402}
+  - component: {fileID: 1393424403}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -1954,7 +1991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4805e46ac6402c54f84604d218b06476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
   upKey: 119
   downKey: 115
   leftKey: 97
@@ -2100,7 +2136,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.3, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2139,11 +2175,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0249dcbf202b2d5438d8ddf5d314c8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  detectDistance: 1.5
+  detectDistance: 1
   interactableLayer:
     serializedVersion: 2
     m_Bits: 8
   interactKey: 101
+  playerId: 1
+  autoAssignKey: 1
+--- !u!114 &1393424403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393424395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69fb36138894874aaa43d565b7d3f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 2
+  sprintSpeed: 5
+  playerId: 1
+  sprintKey: 114
 --- !u!1 &1565502059
 GameObject:
   m_ObjectHideFlags: 0
