@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 3
   tags:
   - Interactable
+  - DeliveryZone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Interactable
+  - Player
   - Water
   - UI
-  - 
+  - Interactable
   - 
   - 
   - 
@@ -41,6 +42,30 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Piso
+    uniqueID: 1829129983
+    locked: 0
+  - name: Paredes
+    uniqueID: 4066997333
+    locked: 0
+  - name: Player
+    uniqueID: 649487869
+    locked: 0
+  - name: Muebles
+    uniqueID: 804681757
+    locked: 0
+  - name: Objetos
+    uniqueID: 2529976167
+    locked: 0
+  - name: BordesParedes
+    uniqueID: 1608770973
+    locked: 0
+  - name: BordeEsquina
+    uniqueID: 1297848009
+    locked: 0
+  - name: MueblesSinCollider
+    uniqueID: 2497942295
     locked: 0
   m_RenderingLayers:
   - Default

@@ -1,100 +1,132 @@
-using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public float detectDistance = 1f;     // distancia del raycast
-    public LayerMask interactableLayer;     // capa de objetos interactuables
-    public KeyCode interactKey = KeyCode.E; // tecla de interacción (se puede override en el inspector)
-    public int playerId = 1; // 1 = jugador 1, 2 = jugador 2
-    public bool autoAssignKey = true; // si es true se asigna E para player 1 y P para player 2 en Start()
+    // --- Variables que ya tenías ---
+    public Transform holdParent; 
+    private GameObject heldObject;     
+    private Rigidbody2D heldObjectRB;
+    private bool isHolding = false;
+    private GameObject pickableObject; 
 
-    private InteractableObject currentObject;
-    private InteractableObject heldObject;
-    private bool isChecking = false;
-    private bool canHold = true;
+    // --- ¡NUEVA VARIABLE! ---
+    // Guardará la zona en la que estamos parados
+    private ZonaDeEntrega currentZone; 
 
-    private void Start()
+    
+    void Update()
     {
-        // Asignación automática de la tecla de interacción según el id de jugador
-        if (autoAssignKey)
+        if (isHolding && heldObject != null)
         {
-            if (playerId == 1) interactKey = KeyCode.E;
-            else if (playerId == 2) interactKey = KeyCode.P;
-        }
-        // Iniciar la detección continua
-        StartCoroutine(DetectionLoop());
-    }
-
-    private IEnumerator DetectionLoop()
-    {
-        isChecking = true;
-
-        while (isChecking)
-        {
-            // Dirección en la que mira el jugador (puede venir de animación o input)
-            Vector2 direction = transform.right; // asume que "derecha" es adelante
-            // Si no se configuró interactableLayer en el inspector (valor 0), usar las capas por defecto
-            int layerMask = (interactableLayer.value == 0) ? Physics2D.DefaultRaycastLayers : interactableLayer.value;
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, detectDistance, layerMask);
-
-            if (hit.collider != null)
-            {
-                // intentar obtener componente InteractableObject
-                currentObject = hit.collider.GetComponent<InteractableObject>();
-                if (currentObject == null)
-                {
-                    Debug.Log("Hit collider '" + hit.collider.name + "' but it has no InteractableObject component.");
-                }
-                Debug.DrawRay(transform.position, direction * detectDistance, Color.green);
-            }
-            else
-            {
-                currentObject = null;
-                Debug.DrawRay(transform.position, direction * detectDistance, Color.red);
-            }
-
-            yield return new WaitForSeconds(0.1f); // controla la frecuencia del raycast
+            MoveHeldObject();
         }
     }
 
-    private void Update()
+    // --- ¡NUEVAS FUNCIONES DE TRIGGER! ---
+    // Detectan si entramos o salimos de la zona de entrega
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Presiona E para agarrar/soltar:
-        // - Si ya sostienes un objeto (heldObject != null) -> suéltalo
-        // - Si no sostienes nada -> intenta agarrar el objeto detectado por el raycast (currentObject)
-        if (Input.GetKeyDown(interactKey))
+        // Si entramos en un trigger (nuestro o del objeto)
+        if (other.CompareTag("Pickable"))
         {
-            Debug.Log($"PlayerInteraction (playerId={playerId}) - Interact key pressed: {interactKey}");
-            Debug.Log($"currentObject = {(currentObject != null ? currentObject.name : "null")}");
-            // Si ya tenemos un objeto sostenido, lo soltamos
-            if (heldObject != null)
-            {
-                heldObject.Interact(transform);
-                heldObject = null;
-                canHold = true;
-                return;
-            }
+            pickableObject = other.gameObject;
+        }
+        
+        // ¡NUEVO! Comprueba si entramos en la zona de entrega
+        if (other.CompareTag("DeliveryZone"))
+        {
+            currentZone = other.GetComponent<ZonaDeEntrega>();
+        }
+    }
 
-            // Si no sostenemos nada, intentamos agarrar el objeto detectado
-            if (currentObject != null && canHold && !currentObject.IsHeld)
-            {
-                // calcular posición de sujeción: delante del jugador en su dirección de mirada,
-                // y un poco abajo para que quede natural (ej: -0.3 en Y local)
-                Vector3 faceDir = transform.right.normalized; // dirección en la que mira
-                float holdDistance = 0.8f; // distancia frontal donde se posiciona el objeto
-                Vector3 holdWorldPos = transform.position + (Vector3)faceDir * holdDistance + new Vector3(0, -0.3f, 0);
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject == pickableObject)
+        {
+            pickableObject = null;
+        }
 
-                // Llamamos al overload que posiciona en world pos
-                currentObject.Interact(transform, holdWorldPos);
+        // ¡NUEVO! Comprueba si salimos de la zona de entrega
+        if (other.CompareTag("DeliveryZone"))
+        {
+            currentZone = null;
+        }
+    }
 
-                // después de interactuar, si el objeto ahora está sostenido, lo registramos
-                if (currentObject.IsHeld)
-                {
-                    heldObject = currentObject;
-                    canHold = false;
-                }
-            }
+    
+    // --- FUNCIÓN DE INTERACCIÓN ---
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return; 
+
+        if (isHolding)
+        {
+            DropObject(); // Soltamos
+        }
+        else if (pickableObject != null) 
+        {
+            TryPickup(pickableObject); // Agarramos
+        }
+    }
+
+    // --- FUNCIÓN DE AGARRAR (MODIFICADA) ---
+    void TryPickup(GameObject objectToPickUp)
+    {
+        isHolding = true;
+        heldObject = objectToPickUp; 
+        heldObjectRB = heldObject.GetComponent<Rigidbody2D>();
+
+        if (heldObjectRB != null)
+        {
+            heldObjectRB.isKinematic = true;
+            heldObjectRB.linearVelocity = Vector2.zero;
+        }
+
+        heldObject.transform.parent = holdParent;
+        heldObject.transform.localPosition = Vector3.zero;
+
+        pickableObject = null;
+
+        // --- ¡LÍNEA AÑADIDA! ---
+        // Avisa a la zona (si estamos en una) que hemos AGARRADO un objeto
+        if (currentZone != null)
+        {
+            currentZone.RemoveObject(heldObject);
+        }
+    }
+
+    // --- FUNCIÓN DE SOLTAR (MODIFICADA) ---
+    void DropObject()
+    {
+        if (heldObject == null) return;
+
+        if (heldObjectRB != null)
+        {
+            heldObjectRB.isKinematic = false;
+        }
+
+        heldObject.transform.parent = null;
+        pickableObject = heldObject; // Lo podemos volver a agarrar
+        
+        // --- ¡LÍNEA AÑADIDA! ---
+        // Avisa a la zona (si estamos en una) que hemos SOLTADO un objeto
+        if (currentZone != null)
+        {
+            currentZone.CheckObject(heldObject);
+        }
+
+        heldObject = null;
+        heldObjectRB = null;
+        isHolding = false;
+    }
+
+    // (MoveHeldObject no cambia)
+    void MoveHeldObject()
+    {
+        if (heldObject != null)
+        {
+            heldObject.transform.position = holdParent.position;
         }
     }
 }

@@ -24,7 +24,8 @@ public class InteractableObject : MonoBehaviour
         // no sea afectado por gravedad/vientos/collisions mientras esté en escena.
         if (rb != null)
         {
-            rb.isKinematic = true;
+            // CAMBIO AQUÍ
+            rb.bodyType = RigidbodyType2D.Kinematic; 
             rb.linearVelocity = Vector2.zero;
         }
     }
@@ -58,7 +59,9 @@ public class InteractableObject : MonoBehaviour
             {
                 // seguir siendo kinematic mientras se sostiene (no queremos que la física empuje al objeto)
                 rb.linearVelocity = Vector2.zero;
-                rb.isKinematic = true;
+                
+                // CAMBIO AQUÍ
+                rb.bodyType = RigidbodyType2D.Kinematic;
             }
             // evitar parentear; en su lugar calculamos la posición mundial desde un offset local
             // y desactivamos las colisiones físicas con el jugador (trigger) mientras se sostiene
@@ -84,7 +87,9 @@ public class InteractableObject : MonoBehaviour
             if (rb != null)
             {
                 // Mantener kinematic para que el objeto no se mueva por física al soltarse.
-                rb.isKinematic = true;
+                
+                // CAMBIO AQUÍ
+                rb.bodyType = RigidbodyType2D.Kinematic;
                 rb.linearVelocity = Vector2.zero;
             }
             if (col != null)
@@ -105,7 +110,9 @@ public class InteractableObject : MonoBehaviour
             if (rb != null)
             {
                 rb.linearVelocity = Vector2.zero;
-                rb.isKinematic = true;
+                
+                // CAMBIO AQUÍ
+                rb.bodyType = RigidbodyType2D.Kinematic;
             }
             // evitar parentear; desactivar colisiones físicas con el jugador mientras se sostiene
             if (col != null)
@@ -128,7 +135,8 @@ public class InteractableObject : MonoBehaviour
             holder = null;
             if (rb != null)
             {
-                rb.isKinematic = true;
+                // CAMBIO AQUÍ
+                rb.bodyType = RigidbodyType2D.Kinematic;
                 rb.linearVelocity = Vector2.zero;
             }
             if (col != null)
