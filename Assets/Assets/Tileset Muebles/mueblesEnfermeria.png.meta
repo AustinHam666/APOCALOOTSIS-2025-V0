@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: cb4ff6d627c853847ac2bb3369831f65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5340504830608456402
+    second: mueblesEnfermeria_0
+  - first:
+      213: -6217507755517252385
+    second: mueblesEnfermeria_1
+  - first:
+      213: -8006329848000590465
+    second: mueblesEnfermeria_2
+  - first:
+      213: 2919475532861503787
+    second: mueblesEnfermeria_3
+  - first:
+      213: -3754712380504111407
+    second: mueblesEnfermeria_4
+  - first:
+      213: -1736652239692545031
+    second: mueblesEnfermeria_5
+  - first:
+      213: 2119409959446012532
+    second: mueblesEnfermeria_6
+  - first:
+      213: -3203914102821808359
+    second: mueblesEnfermeria_7
+  - first:
+      213: 1819469858784142625
+    second: mueblesEnfermeria_8
+  - first:
+      213: -7035351089108626894
+    second: mueblesEnfermeria_9
+  - first:
+      213: 30039327195008632
+    second: mueblesEnfermeria_10
+  - first:
+      213: 3621960331964344044
+    second: mueblesEnfermeria_11
+  - first:
+      213: -219761306028936740
+    second: mueblesEnfermeria_12
+  - first:
+      213: -3605450485972945283
+    second: mueblesEnfermeria_13
+  - first:
+      213: 1084918990805863359
+    second: mueblesEnfermeria_14
+  - first:
+      213: -7367490435598030895
+    second: mueblesEnfermeria_15
+  - first:
+      213: 2205021387370695168
+    second: mueblesEnfermeria_16
+  - first:
+      213: 623271798192891776
+    second: mueblesEnfermeria_17
+  - first:
+      213: -389250822498626500
+    second: mueblesEnfermeria_18
+  - first:
+      213: 1801204330266342506
+    second: mueblesEnfermeria_19
+  - first:
+      213: -6688777682377248070
+    second: mueblesEnfermeria_20
+  - first:
+      213: -9079721619160427290
+    second: mueblesEnfermeria_21
+  - first:
+      213: -5476255532745082813
+    second: mueblesEnfermeria_22
+  - first:
+      213: -3368556593922285743
+    second: mueblesEnfermeria_23
+  - first:
+      213: 7668753756952029111
+    second: mueblesEnfermeria_24
+  - first:
+      213: 5947486444409623596
+    second: mueblesEnfermeria_25
+  - first:
+      213: -7128751070440348005
+    second: mueblesEnfermeria_26
+  - first:
+      213: -8267448366974557222
+    second: mueblesEnfermeria_27
+  - first:
+      213: -31392828143437751
+    second: mueblesEnfermeria_28
+  - first:
+      213: 8095955950368149051
+    second: mueblesEnfermeria_29
+  - first:
+      213: -6626600167465115956
+    second: mueblesEnfermeria_30
+  - first:
+      213: 780912498234194834
+    second: mueblesEnfermeria_31
+  - first:
+      213: 5142318457337122468
+    second: mueblesEnfermeria_32
+  - first:
+      213: -8399840783642493420
+    second: mueblesEnfermeria_33
+  - first:
+      213: 3732428747132249758
+    second: mueblesEnfermeria_34
+  - first:
+      213: 3749419869399222883
+    second: mueblesEnfermeria_35
+  - first:
+      213: 3552569815084225951
+    second: mueblesEnfermeria_36
+  - first:
+      213: -5319395691460652496
+    second: mueblesEnfermeria_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mueblesEnfermeria_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 129
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dabca529d84d1a40800000000000000
+      internalID: 5340504830608456402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 153
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc682c53a9f6b9a0800000000000000
+      internalID: -6217507755517252385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 153
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d415f2c6dc3e090800000000000000
+      internalID: -8006329848000590465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 153
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2977a2778f048820800000000000000
+      internalID: 2919475532861503787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 153
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d68a46bbf494ebc0800000000000000
+      internalID: -3754712380504111407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 153
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f34dba3dfb26e7e0800000000000000
+      internalID: -1736652239692545031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 153
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47264360128a96d10800000000000000
+      internalID: 2119409959446012532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 153
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917117a39196983d0800000000000000
+      internalID: -3203914102821808359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 153
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125eb54523e004910800000000000000
+      internalID: 1819469858784142625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 153
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232d58795796d5e90800000000000000
+      internalID: -7035351089108626894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 121
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e00c2eb98ba6000800000000000000
+      internalID: 30039327195008632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 121
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce66a416bb9c34230800000000000000
+      internalID: 3621960331964344044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 121
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1f4caa14043fcf0800000000000000
+      internalID: -219761306028936740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 121
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76b250b2edd6fdc0800000000000000
+      internalID: -3605450485972945283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 89
+        width: 26
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 30}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb0f01f2186e0f00800000000000000
+      internalID: 1084918990805863359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 125
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d76714cb7a61c990800000000000000
+      internalID: -7367490435598030895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_16
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 121
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a8e54e44fc99e10800000000000000
+      internalID: 2205021387370695168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_17
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 121
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0876ec1f56e46a800800000000000000
+      internalID: 623271798192891776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_18
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 121
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34d074707a199af0800000000000000
+      internalID: -389250822498626500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 121
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64bb619bc92ff810800000000000000
+      internalID: 1801204330266342506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 89
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2f754f220bc23a0800000000000000
+      internalID: -6688777682377248070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 89
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e412863b495ef180800000000000000
+      internalID: -9079721619160427290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_22
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 89
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348367f7b9e6004b0800000000000000
+      internalID: -5476255532745082813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_23
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 89
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f567d00ab7041d0800000000000000
+      internalID: -3368556593922285743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_24
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 89
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7611149e2ec6a60800000000000000
+      internalID: 7668753756952029111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_25
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 89
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c249c79f867b98250800000000000000
+      internalID: 5947486444409623596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 89
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96a732dba6911d90800000000000000
+      internalID: -7128751070440348005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_27
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 89
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad32997538f144d80800000000000000
+      internalID: -8267448366974557222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_28
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 32
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948f30e9368709ff0800000000000000
+      internalID: -31392828143437751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 32
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e47eaea0d9a5070800000000000000
+      internalID: 8095955950368149051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 58
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce92b5c1469904a0800000000000000
+      internalID: -6626600167465115956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 57
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b79e997cb56da00800000000000000
+      internalID: 780912498234194834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_32
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 57
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae838b446f2d5740800000000000000
+      internalID: 5142318457337122468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 57
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e7621cf45cd6b80800000000000000
+      internalID: -8399840783642493420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 25
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9626469b204cc330800000000000000
+      internalID: 3732428747132249758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_35
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 25
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a0555818d980430800000000000000
+      internalID: 3749419869399222883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95dedbac634d4130800000000000000
+      internalID: 3552569815084225951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mueblesEnfermeria_37
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 0
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0329ebe4dc5bd26b0800000000000000
+      internalID: -5319395691460652496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aa8796aa26fdced4d8cc3fa0a8b1ac5b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      mueblesEnfermeria_0: 5340504830608456402
+      mueblesEnfermeria_1: -6217507755517252385
+      mueblesEnfermeria_10: 30039327195008632
+      mueblesEnfermeria_11: 3621960331964344044
+      mueblesEnfermeria_12: -219761306028936740
+      mueblesEnfermeria_13: -3605450485972945283
+      mueblesEnfermeria_14: 1084918990805863359
+      mueblesEnfermeria_15: -7367490435598030895
+      mueblesEnfermeria_16: 2205021387370695168
+      mueblesEnfermeria_17: 623271798192891776
+      mueblesEnfermeria_18: -389250822498626500
+      mueblesEnfermeria_19: 1801204330266342506
+      mueblesEnfermeria_2: -8006329848000590465
+      mueblesEnfermeria_20: -6688777682377248070
+      mueblesEnfermeria_21: -9079721619160427290
+      mueblesEnfermeria_22: -5476255532745082813
+      mueblesEnfermeria_23: -3368556593922285743
+      mueblesEnfermeria_24: 7668753756952029111
+      mueblesEnfermeria_25: 5947486444409623596
+      mueblesEnfermeria_26: -7128751070440348005
+      mueblesEnfermeria_27: -8267448366974557222
+      mueblesEnfermeria_28: -31392828143437751
+      mueblesEnfermeria_29: 8095955950368149051
+      mueblesEnfermeria_3: 2919475532861503787
+      mueblesEnfermeria_30: -6626600167465115956
+      mueblesEnfermeria_31: 780912498234194834
+      mueblesEnfermeria_32: 5142318457337122468
+      mueblesEnfermeria_33: -8399840783642493420
+      mueblesEnfermeria_34: 3732428747132249758
+      mueblesEnfermeria_35: 3749419869399222883
+      mueblesEnfermeria_36: 3552569815084225951
+      mueblesEnfermeria_37: -5319395691460652496
+      mueblesEnfermeria_4: -3754712380504111407
+      mueblesEnfermeria_5: -1736652239692545031
+      mueblesEnfermeria_6: 2119409959446012532
+      mueblesEnfermeria_7: -3203914102821808359
+      mueblesEnfermeria_8: 1819469858784142625
+      mueblesEnfermeria_9: -7035351089108626894
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

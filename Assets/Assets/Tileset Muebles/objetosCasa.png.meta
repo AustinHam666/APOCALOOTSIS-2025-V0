@@ -1,0 +1,556 @@
+fileFormatVersion: 2
+guid: b1ed7da3db894bb43ae463952bb48270
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2436922743908781566
+    second: objetosCasa_0
+  - first:
+      213: 6476543750416535018
+    second: objetosCasa_1
+  - first:
+      213: 1765695973050633127
+    second: objetosCasa_2
+  - first:
+      213: 5100244674240886984
+    second: objetosCasa_3
+  - first:
+      213: -5942224813273297543
+    second: objetosCasa_4
+  - first:
+      213: 7253824644958248655
+    second: objetosCasa_5
+  - first:
+      213: 3571181137061774033
+    second: objetosCasa_6
+  - first:
+      213: -2391609994043932669
+    second: objetosCasa_7
+  - first:
+      213: 8880636134370688803
+    second: objetosCasa_8
+  - first:
+      213: -7811183073364860682
+    second: objetosCasa_9
+  - first:
+      213: -77977363096542954
+    second: objetosCasa_10
+  - first:
+      213: 4372552285029522845
+    second: objetosCasa_11
+  - first:
+      213: -1203593744442965112
+    second: objetosCasa_12
+  - first:
+      213: 8114854311131165991
+    second: objetosCasa_13
+  - first:
+      213: -3265637215714769399
+    second: objetosCasa_14
+  - first:
+      213: -7649746193945265926
+    second: objetosCasa_15
+  - first:
+      213: 4884382101706359930
+    second: objetosCasa_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: objetosCasa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4, y: 8}
+        - {x: -4, y: 8}
+        - {x: -4, y: -8}
+        - {x: 4, y: -8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdc0cff250b1d120800000000000000
+      internalID: 2436922743908781566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 3.5, y: 5.5}
+        - {x: -3.5, y: 5.5}
+        - {x: -3.5, y: -5.5}
+        - {x: 3.5, y: -5.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed8adf0a3e41e950800000000000000
+      internalID: 6476543750416535018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 3.5, y: 5.5}
+        - {x: -3.5, y: 5.5}
+        - {x: -3.5, y: -5.5}
+        - {x: 3.5, y: -5.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab4507e123018810800000000000000
+      internalID: 1765695973050633127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 5.5, y: 2.5}
+        - {x: 1.5, y: 6.5}
+        - {x: -1.5, y: 6.5}
+        - {x: -5.5, y: 2.5}
+        - {x: -5.5, y: -6.5}
+        - {x: 5.5, y: -6.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8b4bb4285b7c640800000000000000
+      internalID: 5100244674240886984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4.5, y: -4}
+        - {x: 4.5, y: 7}
+        - {x: -4.5, y: 7}
+        - {x: -4.5, y: -7}
+        - {x: 1.5, y: -7}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d455df30af88da0800000000000000
+      internalID: -5942224813273297543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: -3}
+        - {x: 7, y: 4}
+        - {x: -7, y: 4}
+        - {x: -7, y: -4}
+        - {x: 6, y: -4}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fced5b90513caa460800000000000000
+      internalID: 7253824644958248655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7.5, y: -6.5}
+        - {x: 7.5, y: 6.5}
+        - {x: 6.5, y: 7.5}
+        - {x: -4.5, y: 7.5}
+        - {x: -7.5, y: 3.5}
+        - {x: -7.5, y: -6.5}
+        - {x: -6.5, y: -7.5}
+        - {x: 6.5, y: -7.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2842fb2526f8130800000000000000
+      internalID: 3571181137061774033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 6, y: 3.5}
+        - {x: 3, y: 6.5}
+        - {x: -5, y: 6.5}
+        - {x: -6, y: 5.5}
+        - {x: -6, y: -6.5}
+        - {x: 6, y: -6.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300ccb7b16b4fced0800000000000000
+      internalID: -2391609994043932669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4, y: 5.5}
+        - {x: -4, y: 5.5}
+        - {x: -4, y: -5.5}
+        - {x: 4, y: -5.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fb9a8338b5e3b70800000000000000
+      internalID: 8880636134370688803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 4.5, y: -4.5}
+        - {x: 4.5, y: 4.5}
+        - {x: 3.5, y: 5.5}
+        - {x: -3.5, y: 5.5}
+        - {x: -4.5, y: 4.5}
+        - {x: -4.5, y: -4.5}
+        - {x: -3.5, y: -5.5}
+        - {x: 3.5, y: -5.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f02b84516a199390800000000000000
+      internalID: -7811183073364860682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 8, y: 5}
+        - {x: 7, y: 6}
+        - {x: 1, y: 7}
+        - {x: -6, y: 7}
+        - {x: -8, y: 6}
+        - {x: -8, y: -7}
+        - {x: 8, y: -7}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611eb1c5008faeef0800000000000000
+      internalID: -77977363096542954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 5.5, y: -2}
+        - {x: 5.5, y: 4}
+        - {x: 3.5, y: 6}
+        - {x: -1.5, y: 6}
+        - {x: -5.5, y: 2}
+        - {x: -5.5, y: -3}
+        - {x: -2.5, y: -6}
+        - {x: 1.5, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dd10fe22d6eac30800000000000000
+      internalID: 4372552285029522845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objetosCasa_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 7, y: 14}
+        - {x: -6, y: 14}
+        - {x: -7, y: 8}
+        - {x: -7, y: -14}
+        - {x: 7, y: -14}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8834898cdd9fb4fe0800000000000000
+      internalID: -1203593744442965112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 48e6e8a5ce4b59d4babcf2a24ac6ce02
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":5.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      objetosCasa_0: 2436922743908781566
+      objetosCasa_1: 6476543750416535018
+      objetosCasa_10: -77977363096542954
+      objetosCasa_11: 4372552285029522845
+      objetosCasa_12: -1203593744442965112
+      objetosCasa_2: 1765695973050633127
+      objetosCasa_3: 5100244674240886984
+      objetosCasa_4: -5942224813273297543
+      objetosCasa_5: 7253824644958248655
+      objetosCasa_6: 3571181137061774033
+      objetosCasa_7: -2391609994043932669
+      objetosCasa_8: 8880636134370688803
+      objetosCasa_9: -7811183073364860682
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
