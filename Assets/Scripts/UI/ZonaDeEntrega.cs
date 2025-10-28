@@ -1,62 +1,120 @@
 using UnityEngine;
-using TMPro; // Necesario para el texto
-using System.Collections.Generic; // Necesario para las listas
+using TMPro; 
+using System.Collections.Generic;
 
+[RequireComponent(typeof(Collider2D))]
 public class ZonaDeEntrega : MonoBehaviour
 {
-    // 1. Arrastra tu UI de texto aquí en el Inspector
-    public TextMeshProUGUI scoreText;
+    // --- ¡SOLUCIÓN DE ERROR! Esta variable debe ser public static ---
+    public static int aciertosFinales = 0; 
 
-    // 2. La lista de nombres de objetos que buscamos
-    private HashSet<string> targetNames = new HashSet<string>
+    [Header("Configuración de la Zona")]
+    public int capacidadMaxima = 5;
+    public TextMeshProUGUI textoAciertos; 
+    public TextMeshProUGUI textoTotal; 	
+
+    [Header("Referencias")]
+    public UIManager uiManager;
+
+    // La lista de nombres de objetos que SÍ son correctos
+    private HashSet<string> nombresCorrectos = new HashSet<string>
     {
-        "Objeto",
-        "Objeto2",
-        "Objeto3",
-        "Objeto4",
-        "Objeto5"
+        "Objeto", "Objeto2", "Objeto3", "Objeto4", "Objeto5"
     };
 
-    // 3. La lista de objetos que SÍ están en la zona
-    private HashSet<string> objectsInZone = new HashSet<string>();
+    private List<GameObject> objetosEnZona = new List<GameObject>();
 
-    void Start()
+    void Awake()
     {
-        UpdateScore(); // Pone el contador en "0 / 5" al empezar
-    }
-
-    // Esta función la llamará el JUGADOR cuando SUELTE un objeto
-    public void CheckObject(GameObject obj)
-    {
-        string objectName = obj.name;
-
-        // Si el objeto tiene el nombre correcto Y no está ya en la lista
-        if (targetNames.Contains(objectName) && !objectsInZone.Contains(objectName))
+        Collider2D col = GetComponent<Collider2D>();
+        if (!col.isTrigger)
         {
-            objectsInZone.Add(objectName);
-            UpdateScore();
+            col.isTrigger = true;
         }
-    }
 
-    // Esta función la llamará el JUGADOR cuando AGARRE un objeto
-    public void RemoveObject(GameObject obj)
-    {
-        string objectName = obj.name;
-
-        // Si el objeto está en nuestra lista de "entregados"
-        if (objectsInZone.Contains(objectName))
+        // Revisar si el UIManager fue asignado
+        if (uiManager == null)
         {
-            objectsInZone.Remove(objectName);
-            UpdateScore();
+            Debug.LogError("¡ERROR! Falta asignar el UIManager en la ZonaDeEntrega. Arrástralo al Inspector.");
         }
+        
+        // Inicializamos la puntuación estática
+        aciertosFinales = 0;
+        ActualizarUI();
     }
 
-    // Actualiza el texto de la UI
-    private void UpdateScore()
+    // Esta función se activa AUTOMÁTICAMENTE cuando un collider se activa dentro de la zona
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (scoreText != null)
+        // Ignora al jugador, paredes, etc.
+        if (!other.CompareTag("Interactable"))
         {
-            scoreText.text = objectsInZone.Count.ToString() + " / 5";
+            return; 
+        }
+
+        // Si la zona está llena, no hagas nada
+        if (objetosEnZona.Count >= capacidadMaxima)
+        {
+            return;
+        }
+
+        GameObject objetoEntregado = other.gameObject;
+
+        // Si ya está en la lista, no hagas nada
+        if (objetosEnZona.Contains(objetoEntregado))
+        {
+            return;
+        }
+
+        // --- ¡Objeto Añadido! ---
+        objetosEnZona.Add(objetoEntregado);
+        objetoEntregado.tag = "Untagged"; // Quita el tag para no volver a agarrarlo
+        
+        Rigidbody2D objRb = objetoEntregado.GetComponent<Rigidbody2D>();
+        if (objRb != null)
+        {
+            objRb.bodyType = RigidbodyType2D.Kinematic;
+        }
+
+        // --- LÓGICA DE CORAZONES/ERROR ---
+        // Revisamos si el nombre del objeto NO está en la lista de correctos
+        if (!nombresCorrectos.Contains(objetoEntregado.name))
+        {
+            // ¡Es un error! Llamamos al UIManager para quitar un corazón
+            if (uiManager != null)
+            {
+                uiManager.QuitarCorazon();
+            }
+            Debug.Log("¡ERROR! Objeto incorrecto entregado: " + objetoEntregado.name);
+        }
+
+        // Actualizar la UI y la puntuación estática
+        ActualizarUI();
+    }
+
+    private void ActualizarUI()
+    {
+        int aciertos = 0;
+        
+        foreach (GameObject obj in objetosEnZona)
+        {
+            if (nombresCorrectos.Contains(obj.name))
+            {
+                aciertos++;
+            }
+        }
+        
+        // --- ¡ACTUALIZA LA VARIABLE ESTÁTICA AQUÍ! ---
+        aciertosFinales = aciertos; 
+
+        if (textoAciertos != null)
+        {
+            textoAciertos.text = "Aciertos: " + aciertos + " / " + nombresCorrectos.Count;
+        }
+
+        if (textoTotal != null)
+        {
+            textoTotal.text = "Total en Zona: " + objetosEnZona.Count + " / " + capacidadMaxima;
         }
     }
 }

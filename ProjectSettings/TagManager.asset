@@ -14,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Interactable
-  - 
-  - 
+  - Paredes
+  - PlayerTrigger
   - 
   - 
   - 
@@ -49,6 +49,12 @@ TagManager:
   - name: Paredes
     uniqueID: 4066997333
     locked: 0
+  - name: BordeEsquina
+    uniqueID: 1297848009
+    locked: 0
+  - name: MueblesSinCollider
+    uniqueID: 2497942295
+    locked: 0
   - name: Player
     uniqueID: 649487869
     locked: 0
@@ -60,12 +66,6 @@ TagManager:
     locked: 0
   - name: BordesParedes
     uniqueID: 1608770973
-    locked: 0
-  - name: BordeEsquina
-    uniqueID: 1297848009
-    locked: 0
-  - name: MueblesSinCollider
-    uniqueID: 2497942295
     locked: 0
   m_RenderingLayers:
   - Default
