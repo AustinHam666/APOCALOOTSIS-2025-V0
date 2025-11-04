@@ -1,4 +1,4 @@
-[APOCALOOTSIS]
+#APOCALOOTSIS#
 Apocalootsis es un multijugador en vista top-down con un estilo pixel art en 2D, diseñado tanto para PC como para Arcade (palanca + 3 botones). Está desarrollado en Unity, con un estilo visual oscuro y post-apocalíptico que refuerza la tensión de las partidas.
 
 Características Principales
