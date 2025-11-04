@@ -19,7 +19,7 @@ public class RoundStartDisplay : MonoBehaviour
         // Asegurarse de que el panel esté asignado
         if (introPanel == null)
         {
-            Debug.LogError("RoundStartDisplay: No se ha asignado el GameObject del panel de introducción. Por favor, arrástralo en el Inspector.");
+            Debug.Log("RoundStartDisplay: No se ha asignado el GameObject del panel de introducción. Por favor, arrástralo en el Inspector.");
             enabled = false; // Desactiva el script
             return;
         }

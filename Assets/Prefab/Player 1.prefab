@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 3634776480330865019}
   - component: {fileID: 4797967148207261895}
   - component: {fileID: 6928072113946141343}
-  - component: {fileID: 9122073174756808540}
-  - component: {fileID: 8626150641008992893}
   - component: {fileID: 4473990412684573498}
   m_Layer: 0
   m_Name: Player 1
@@ -84,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 649487869
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -834914118590599438, guid: feef40fcb283e13438ef131356de1f90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,11 +107,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4805e46ac6402c54f84604d218b06476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
+  walkSpeed: 3
+  runSpeed: 6
   upKey: 119
   downKey: 115
   leftKey: 97
   rightKey: 100
+  sprintKey: 0
+  interactKey: 0
+  throwKey: 0
+  holdParent: {fileID: 0}
+  throwForce: 10
+  stunDuration: 0.5
+  heldObject: {fileID: 0}
+  isHolding: 0
 --- !u!50 &3634776480330865019
 Rigidbody2D:
   serializedVersion: 5
@@ -209,32 +216,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9122073174756808540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106065412733742865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0249dcbf202b2d5438d8ddf5d314c8a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  holdParent: {fileID: 0}
---- !u!114 &8626150641008992893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106065412733742865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b2c3a2e8e3fbf846af1fd0573699f11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 5
 --- !u!114 &4473990412684573498
 MonoBehaviour:
   m_ObjectHideFlags: 0

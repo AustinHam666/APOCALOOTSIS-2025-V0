@@ -25,9 +25,10 @@ public class InteractableObject : MonoBehaviour
         if (rb != null)
         {
             // CAMBIO AQUÍ
-            rb.bodyType = RigidbodyType2D.Kinematic; 
+            rb.bodyType = RigidbodyType2D.Kinematic;
             rb.linearVelocity = Vector2.zero;
         }
+    
     }
 
     void Update()
@@ -103,6 +104,7 @@ public class InteractableObject : MonoBehaviour
     // Esto se usa para posicionar el objeto en la dirección hacia la que mira el jugador.
     public void Interact(Transform player, Vector3 holdWorldPosition)
     {
+        Debug.Log($"Interactuando");
         if (!isHeld)
         {
             isHeld = true;

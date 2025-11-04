@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private List<GameObject> interactablesInRange = new List<GameObject>();
     
     // Variables para el sistema de attach
-    private GameObject attachedObject;
+    public GameObject attachedObject;
     private Vector3 attachOffset;
     private bool isInteracting = false;
 
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 interactAction = playerInput.actions["Interact"];
                 interactAction.started += _ => StartInteract();
-                interactAction.canceled += _ => StopInteract();
+                //interactAction.canceled += _ => StopInteract();
             }
 
             if (playerInput.actions.FindAction("Sprint") != null)
@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
         moveAction?.Disable();
         interactAction?.Disable();
         sprintAction?.Disable();
-        StopInteract();
+        //StopInteract();
     }
 
     private void FixedUpdate()
@@ -104,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
             
             if (other.gameObject == attachedObject)
             {
-                StopInteract();
+                //StopInteract();
             }
         }
     }
@@ -113,27 +113,31 @@ public class PlayerMovement : MonoBehaviour
     {
         if (interactablesInRange.Count > 0 && !isInteracting)
         {
+            Debug.Log("Intentando interactuar con un objeto...");
             GameObject targetObject = interactablesInRange[0];
-            
+
             Vector2 direction = (targetObject.transform.position - transform.position).normalized;
             string directionText = GetDirectionText(direction);
 
-            Debug.Log($"Started interacting with: {targetObject.GetComponent<ObjectData>()?.GetObjectData().ObjectName} - Direction: {directionText}");
+            //Debug.Log($"Started interacting with: {targetObject.GetComponent<ObjectData>()?.GetObjectData().ObjectName} - Direction: {directionText}");
 
             attachedObject = targetObject;
             attachOffset = targetObject.transform.position - transform.position;
             isInteracting = true;
-            
+
             Rigidbody2D objectRb = attachedObject.GetComponent<Rigidbody2D>();
             if (objectRb != null)
             {
                 // CAMBIO AQUÍ
                 objectRb.bodyType = RigidbodyType2D.Kinematic;
             }
+        } else if (isInteracting)
+        {
+            Debug.Log("Ya está interactuando con un objeto.");
         }
     }
 
-    private void StopInteract()
+    /*private void StopInteract()
     {
         if (isInteracting && attachedObject != null)
         {
@@ -145,12 +149,13 @@ public class PlayerMovement : MonoBehaviour
                 // CAMBIO AQUÍ
                 objectRb.bodyType = RigidbodyType2D.Dynamic;
             }
-            
+
+            Debug.Log("Soltó el objeto");
             attachedObject = null;
-            attachOffset = Vector3.zero;
+            attachOffset = gameObject.transform.position + new Vector3(0, -10f);
             isInteracting = false;
         }
-    }
+    }*/
 
     private string GetDirectionText(Vector2 direction)
     {

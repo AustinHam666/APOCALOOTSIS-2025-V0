@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public float throwForce = 10f;  // ¡NUEVO! Fuerza del lanzamiento
     public float stunDuration = 0.5f; // ¡NUEVO! Duración del aturdimiento
     
-    private GameObject heldObject;
+    public GameObject heldObject;
     private Rigidbody2D heldObjectRB;
     private GameObject pickableObject;
 
@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement;
     
     // Estados
-    private bool isHolding = false;
+    public bool isHolding = false;
     private bool isSprinting = false;
     private bool canMove = true; // ¡NUEVO! Para el aturdimiento
     private Vector2 lastMoveDirection = new Vector2(0, -1); // ¡NUEVO! Para saber dónde arrojar
@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
     // --- 5. LÓGICA DE AGARRAR / SOLTAR / ARROJAR ---
     void PickUpObject()
     {
+        Debug.Log("Agarrando objeto..." + pickableObject.name);
         heldObject = pickableObject;
         heldObjectRB = heldObject.GetComponent<Rigidbody2D>();
 
@@ -168,8 +169,9 @@ public class PlayerController : MonoBehaviour
         isHolding = true;
     }
 
-    void DropObject()
+    public void DropObject()
     {
+        Debug.Log("Soltando objeto...");
         if (heldObject == null) return;
 
         Collider2D heldCollider = heldObject.GetComponent<Collider2D>();
@@ -181,9 +183,10 @@ public class PlayerController : MonoBehaviour
         if (heldObjectRB != null)
         {
             heldObjectRB.bodyType = RigidbodyType2D.Kinematic; // Sigue siendo Kinematic (no empujable)
-            heldObjectRB.linearVelocity = Vector2.zero; 
+            heldObjectRB.linearVelocity = gameObject.GetComponent<Rigidbody2D>().linearVelocity;
         }
 
+        heldObject.transform.parent.transform.position = new Vector2(transform.position.x, transform.position.y - 1f); // Lo soltamos justo debajo del jugador
         heldObject.transform.SetParent(null);
         heldObject = null;
         heldObjectRB = null;

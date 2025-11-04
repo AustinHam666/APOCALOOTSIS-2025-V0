@@ -23,6 +23,14 @@ public class ZonaDeEntrega : MonoBehaviour
     };
 
     private List<GameObject> objetosEnZona = new List<GameObject>();
+    public int player1Count = 0;
+    public int player2Count = 0;
+    public bool coopGame = true;
+    [SerializeField] private GameObject endScreenUI;
+    [SerializeField] private TMP_Text player1;
+    [SerializeField] private TMP_Text player2;
+    [SerializeField] private TMP_Text whoWins;
+    int totalCount = 0;
 
     void Awake()
     {
@@ -30,12 +38,6 @@ public class ZonaDeEntrega : MonoBehaviour
         if (!col.isTrigger)
         {
             col.isTrigger = true;
-        }
-
-        // Revisar si el UIManager fue asignado
-        if (uiManager == null)
-        {
-            Debug.LogError("¡ERROR! Falta asignar el UIManager en la ZonaDeEntrega. Arrástralo al Inspector.");
         }
         
         // Inicializamos la puntuación estática
@@ -46,56 +48,55 @@ public class ZonaDeEntrega : MonoBehaviour
     // Esta función se activa AUTOMÁTICAMENTE cuando un collider se activa dentro de la zona
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Ignora al jugador, paredes, etc.
-        if (!other.CompareTag("Interactable"))
+        if (other.gameObject.name == "Player 1")
         {
-            return; 
-        }
-
-        // Si la zona está llena, no hagas nada
-        if (objetosEnZona.Count >= capacidadMaxima)
-        {
-            return;
-        }
-
-        GameObject objetoEntregado = other.gameObject;
-
-        // Si ya está en la lista, no hagas nada
-        if (objetosEnZona.Contains(objetoEntregado))
-        {
-            return;
-        }
-
-        // --- ¡Objeto Añadido! ---
-        objetosEnZona.Add(objetoEntregado);
-        objetoEntregado.tag = "Untagged"; // Quita el tag para no volver a agarrarlo
-        
-        Rigidbody2D objRb = objetoEntregado.GetComponent<Rigidbody2D>();
-        if (objRb != null)
-        {
-            objRb.bodyType = RigidbodyType2D.Kinematic;
-        }
-
-        // --- LÓGICA DE CORAZONES/ERROR ---
-        // Revisamos si el nombre del objeto NO está en la lista de correctos
-        if (!nombresCorrectos.Contains(objetoEntregado.name))
-        {
-            // ¡Es un error! Llamamos al UIManager para quitar un corazón
-            if (uiManager != null)
+            if (other.GetComponent<PlayerController>().isHolding)
             {
-                uiManager.QuitarCorazon();
+                GameObject objetoSostenido = other.GetComponent<PlayerController>().heldObject;
+                if (objetoSostenido != null && !objetosEnZona.Contains(objetoSostenido))
+                {
+                    objetosEnZona.Add(objetoSostenido);
+                    other.GetComponent<PlayerController>().DropObject();
+                    player1Count++;
+                    objetoSostenido.SetActive(false);
+                }
             }
-            Debug.Log("¡ERROR! Objeto incorrecto entregado: " + objetoEntregado.name);
         }
 
-        // Actualizar la UI y la puntuación estática
-        ActualizarUI();
+        // CAMBIO AQUÍ: Player 2 en lugar de Player 1
+        if (other.gameObject.name == "Player 2")
+        {
+            if (other.GetComponent<PlayerController>().isHolding)
+            {
+                GameObject objetoSostenido = other.GetComponent<PlayerController>().heldObject;
+                if (objetoSostenido != null && !objetosEnZona.Contains(objetoSostenido))
+                {
+                    objetosEnZona.Add(objetoSostenido);
+                    other.GetComponent<PlayerController>().DropObject();
+                    player2Count++; // Ya está correcto
+                    objetoSostenido.SetActive(false);
+                }
+            }
+        }
+
+        if (coopGame)
+        {
+            totalCount = player1Count + player2Count;
+            if (totalCount >= capacidadMaxima)
+            {
+                Debug.Log("Capacidad máxima alcanzada en modo cooperativo.");
+                gameObject.GetComponent<Collider2D>().enabled = false;
+                //Logica para terminar el juego
+            }
+        } else {
+            // logica de win de juego versus
+        }
     }
 
     private void ActualizarUI()
     {
         int aciertos = 0;
-        
+
         foreach (GameObject obj in objetosEnZona)
         {
             if (nombresCorrectos.Contains(obj.name))
@@ -103,9 +104,9 @@ public class ZonaDeEntrega : MonoBehaviour
                 aciertos++;
             }
         }
-        
+
         // --- ¡ACTUALIZA LA VARIABLE ESTÁTICA AQUÍ! ---
-        aciertosFinales = aciertos; 
+        aciertosFinales = aciertos;
 
         if (textoAciertos != null)
         {
@@ -115,6 +116,34 @@ public class ZonaDeEntrega : MonoBehaviour
         if (textoTotal != null)
         {
             textoTotal.text = "Total en Zona: " + objetosEnZona.Count + " / " + capacidadMaxima;
+        }
+    }
+    
+    public void SendEndScreen()
+    {
+        if (!coopGame)
+        {
+            player1.text = player1Count.ToString();
+            player2.text = player2Count.ToString();
+
+
+            if (player1Count > player2Count)
+            {
+                whoWins.text = "Jugador 1 Gana!";
+            }
+            else if (player2Count > player1Count)
+            {
+                whoWins.text = "Jugador 2 Gana!";
+            }
+            else
+            {
+                whoWins.text = "Empate!";
+            }
+
+            endScreenUI.SetActive(true);
+        } else {
+            player1.text = totalCount.ToString();
+            endScreenUI.SetActive(true);
         }
     }
 }

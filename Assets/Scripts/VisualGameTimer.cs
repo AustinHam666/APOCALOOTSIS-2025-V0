@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI; // Necesario si usas el componente Image (UI)
-using System.Collections; // Necesario para Coroutines
+using System.Collections;
+using Unity.VisualScripting; // Necesario para Coroutines
 
 public class VisualGameTimer : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class VisualGameTimer : MonoBehaviour
     // --- PROPIEDADES PÚBLICAS (para que otros scripts puedan leerlas) ---
     public float CurrentTime { get { return currentTime; } }
     public bool IsTimerRunning { get { return timerRunning; } }
+
+    [SerializeField] private ZonaDeEntrega zonaDeEntrega;
 
     void Start()
     {
@@ -82,6 +85,7 @@ public class VisualGameTimer : MonoBehaviour
                 currentTime = 0;
                 UpdateVisualTimer();
                 Debug.Log("¡Tiempo terminado!");
+                zonaDeEntrega.SendEndScreen();
                 StopTimer(); // Detiene el temporizador al finalizar
                 // Aquí podrías llamar a un método para Game Over, fin de ronda, etc.
                 // GameManager.Instance.EndRound(); 
